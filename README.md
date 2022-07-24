@@ -23,5 +23,8 @@ Note: Saya memisahkan dulu kolom ini karena jika tidak dipisahkan kolom "price" 
 # Saran perbaikan
 1. Untuk nama kolom yang seharusnya product_code masih bernama event_time entah kenapa tidak bisa diganti
 2. Saran untuk mendapatkan cara yang lebih efektif untuk split strings dalam category code
+3. Saya mencoba beberapa kali untuk add file dari local repo, berhasil sampai commit tapi selalu gagal ketika di-push, muncul pesan 
+error: src refspec main does not match any.
+error: failed to push some refs to 'git@github.com:urmuhilda/data_cleaning_tugas4.git'
 
 Terima kasih
