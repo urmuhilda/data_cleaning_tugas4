@@ -12,7 +12,7 @@ Note: Saya memisahkan dulu kolom ini karena jika tidak dipisahkan kolom "price" 
 5. Sata mengulang langkah ke-4 untuk mengambil kolom yang akan menjadi product_name
 : csvgrep -c "event_type" -m "purchase" Oct_Nov.csv | csvcut -c 2-5,7-8,6 > purchase_raw.csv
 6. Split string dari category_code menampilkan kolom product_code 
-: cat purchase_data_coba.csv | awk -F "." '{print $NF}' | csvcut -c 1 > purchase_product_name.csv
+: cat purchase_raw.csv | awk -F "." '{print $NF}' | csvcut -c 1 > purchase_product_name.csv
 7. Mem-filter kolom (event_time,event_type,product_id,category_is,brand,price), membuang kolom category_code
 : csvgrep -c "event_type" -m "purchase" Oct_Nov.csv | csvcut -c 2-5,7-8 > purchase_filter.csv
 8. Menggabungkan kolom yang sudah ter-filter dengan kolom yang sudah di-split
